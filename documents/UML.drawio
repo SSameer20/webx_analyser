@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-06-27T16:37:21.980Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="3dFpYh3T6euuuVGtDTTX" version="24.6.3" type="device">
+  <diagram name="Page-1" id="OE0e00-32dt-7iqr_as9">
+    <mxGraphModel dx="3000" dy="1591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RspDhKSlySpFXAytsyET-1" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="60" width="620" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-2" value="URL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="140" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-3" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-4" value="SEARCH" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="580" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-5" value="analyse.html" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=29;" vertex="1" parent="1">
+          <mxGeometry x="330" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-6" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="650" width="620" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-7" value="URL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="255" y="730" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-8" value="" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="730" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-9" value="SEARCH" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="565" y="730" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-10" value="URL : example.com&lt;br style=&quot;font-size: 25px;&quot;&gt;donain : .com&lt;div style=&quot;font-size: 25px;&quot;&gt;subdomain : ---&lt;/div&gt;&lt;div style=&quot;font-size: 25px;&quot;&gt;location : 15.155 degre&lt;/div&gt;&lt;div style=&quot;font-size: 25px;&quot;&gt;Country : US&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="305" y="840" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RspDhKSlySpFXAytsyET-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.525;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RspDhKSlySpFXAytsyET-1" target="RspDhKSlySpFXAytsyET-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
