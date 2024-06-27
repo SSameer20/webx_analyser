@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analyze</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .navigation ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   <nav style="
+   display: flex;
+   justify-content: center;
+   width: 100vw;
+   background-color: #658147;
+   align-items: center;
+   height: 5vh;
+   " class="navigation">
+    <ul style="
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 100px;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/analyze">Analyze</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+   </nav>
+   <content>
+    <div class="input-field">
+        <form action="/url/process" method="POST">
+            <label for="url-input">Paste URL Here</label>
+            <input type="text" id="url-input" name="url">
+            <button type="submit">Submit</button>
+        </form>
+        {% if message %}
+        <p>{{ message }}</p>
+        <p>Processed URL: {{ url }}</p>
+        {% endif %}
+    </div>
+   </content>
+</body>
+</html>
