@@ -2,10 +2,10 @@ import requests
 import socket
 from bs4 import BeautifulSoup
 
-url = "https://www.geeksforgeeks.org/"
+url = "https://www.canva.com/design/DAGJDM02qsc/vc7naNby7QyY4eCWsQB3rA/edit"
 hostname = url.split("//")[-1].split("/")[0]
 ip_address = socket.gethostbyname(hostname)
-isp = socket.gethostbyaddr(ip_address)[0]
+isp = socket.gethostbyaddr(ip_address)
 domain = hostname.split(".")[-1]
 subdomain = hostname.split(".")[0] if len(hostname.split(".")) > 1 else ""
 

@@ -1,4 +1,7 @@
 <style>
+    .info{
+        max-width : 80vw;
+    }
     .card{
         background-color : #729762;
         margin : 10px 0px;
@@ -6,12 +9,15 @@
     }
     .card ul{
         list-style-type : none;
+        display : flex;
+        flex-direction : column;
+        word-wrap: break-word;
     }
 </style>
 {% extends 'analyse.html' %}
 
 {% block data %}
-    <div>
+    <div class="info">
    
         {% if data %}
             <div class="card">
