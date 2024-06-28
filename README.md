@@ -20,10 +20,19 @@ Website Analyzer is a tool that provides insights about a website by simply past
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/website-analyzer.git
-2. $ python main.py
-Enter the URL of the website: https://example.com
-Domain: example.com
-Subdomain: 
-Country: United States
-Location: Mountain View, California
+   https://github.com/SSameer20/webx_analyser.git
+   ```
+2. open the directory
+   ```bash
+   cd webx_analyser
+   ```
+3. install packages
+   ```bash
+   pip install Flask requests socket tldextract whois bs4
+   ```
+5. Open Terminal and Run Application
+   ```bash
+   python app.py
+   ```
+
+    
