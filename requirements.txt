@@ -1,0 +1,6 @@
+beautifulsoup4==4.12.3
+dnspython==2.6.1
+Flask==3.0.3
+Requests==2.32.3
+tldextract==5.1.2
+whois==1.20240129.2
