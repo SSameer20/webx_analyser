@@ -2,10 +2,10 @@ import requests
 import socket
 from bs4 import BeautifulSoup
 
-url = "https://www.canva.com/design/DAGJDM02qsc/vc7naNby7QyY4eCWsQB3rA/edit"
+url = "https://www.canva.com/design/DAGJDM02qsc/vc7naNby7QyY4eCWsQB3rA/edit" #URL of the Website
 hostname = url.split("//")[-1].split("/")[0]
 ip_address = socket.gethostbyname(hostname)
-isp = socket.gethostbyaddr(ip_address)
+# isp = socket.gethostbyaddr(ip_address)
 domain = hostname.split(".")[-1]
 subdomain = hostname.split(".")[0] if len(hostname.split(".")) > 1 else ""
 
@@ -27,7 +27,7 @@ if response.status_code == 200:
       print(f"{tag['name'] if tag.has_attr('name') else tag['property']}: {tag['content']}")
   print(hostname)
   print(ip_address)
-  print("ISP : " + isp)
+  # print("ISP : " + isp)
   print(domain)
   print(subdomain)
 else:
