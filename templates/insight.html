@@ -1,0 +1,87 @@
+<style>
+    .card{
+        background-color : #729762;
+        margin : 10px 0px;
+        padding : 10px;
+    }
+    .card ul{
+        list-style-type : none;
+    }
+</style>
+{% extends 'analyse.html' %}
+
+{% block data %}
+    <div>
+   
+        {% if data %}
+            <div class="card">
+                <h2>Domain Information</h2>
+            <ul>
+                <li>IP: {{ data.info.ip }}</li>
+                <li>Location: {{ data.info.location }}</li>
+                <li>ASN: {{ data.info.asn }}</li>
+                <li>ISP: {{ data.info.isp }}</li>
+                <li>Organization: {{ data.info.organization }}</li>
+            </ul>
+            </div>
+
+            <div class="card">
+                <h2>Subdomains</h2>
+            <ul>
+                {% for subdomain in data.subdomains %}
+                    <li>{{ subdomain }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+
+            <h2>External Resources</h2>
+
+            <div class="card">
+                <h3>Stylesheets</h3>
+            <ul>
+                {% for stylesheet in data.resources.stylesheets %}
+                    <li>{{ stylesheet }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+
+            <div class="card">
+                <h3>JavaScripts</h3>
+            <ul>
+                {% for javascript in data.resources.javascripts %}
+                    <li>{{ javascript }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+
+           <div class="card">
+            <h3>Images</h3>
+            <ul>
+                {% for image in data.resources.images %}
+                    <li>{{ image }}</li>
+                {% endfor %}
+            </ul>
+           </div>
+
+            <div class="card">
+                <h3>Iframes</h3>
+            <ul>
+                {% for iframe in data.resources.iframes %}
+                    <li>{{ iframe }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+
+            <div class="card">
+                <h3>Anchors</h3>
+            <ul>
+                {% for anchor in data.resources.anchors %}
+                    <li>{{ anchor }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+        {% else %}
+            <p>No data available</p>
+        {% endif %}
+    </div>
+{% endblock %}

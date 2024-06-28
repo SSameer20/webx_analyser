@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebX | {{page}}</title>
+    <style>
+        *{
+            padding : 0px;
+            margin : 0px
+        }
+
+       
+        .navigation ul li a{
+            color : white;
+            text-decoration : none
+
+        }
+        article{
+            max-width:100vw;
+            height : 95vh;
+            overflow : scroll;
+            background-color: #E7F0DC;
+            display :flex;
+            flex-direction : column;
+            justify-content : start;
+            align-items: center;
+            padding-top : 50px
+        }
+
+        article > *{
+            margin : 20px
+        }
+
+        .search-input{
+            height : 20px;
+            width : 30vw
+        }
+
+
+    </style>
+</head>
+<body>
+   <nav style="
+   display:flex;
+   justify-content:center;
+   max-width:100vw;
+   background-color:#658147;
+   align-items : center;
+   height:5vh
+   " class="navigation">
+    <ul style="
+        list-style-type:none;
+        display : flex;
+        flex-direct:row;
+        justify-content:space-around;
+        gap:100px"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/analyse">Analyse</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+   </nav>
+   <article>
+    <form action="/insight" method="get">
+        <input type="text" name="url" placeholder="Enter website URL" required class="search-input">
+        <button type="submit" id="btn">Analyze</button>
+    </form>
+    {% block data%}
+    {% endblock %}
+
+   </article>
+
+
+
+   <script>
+    const button = document.getElementById('btn')
+    button.addEventListener('click', function() {
+        let data = document.getElementById('search').value;
+        if(data === ""){
+            alert("Please Give input");
+        }
+        else{
+            console.log(data);
+            document.getElementById('search').value = "";
+        }
+    });
+    
+   </script>
+   
+</body>
+</html>
